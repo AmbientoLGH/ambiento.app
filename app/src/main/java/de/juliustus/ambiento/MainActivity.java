@@ -19,6 +19,7 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Button-Liste
     private ArrayList<ButtonProperty> modes = new ArrayList<ButtonProperty>(){{
         add(new ButtonProperty("#757575","heller"));
         add(new ButtonProperty("#424242", "dunkler"));
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         GridLayout rgbGrid = findViewById(R.id.rgb_grid);
         int dpi = (int) getResources().getDisplayMetrics().density;
 
+        // Auflisten der Buttons
         for(ButtonProperty property : modes) {
             LinearLayout frameLayout = new LinearLayout(this);
             frameLayout.setOrientation(LinearLayout.VERTICAL);

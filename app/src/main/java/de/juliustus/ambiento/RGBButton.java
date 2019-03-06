@@ -42,6 +42,7 @@ public class RGBButton {
         });
     }
 
+    // Senden des Signals ans Kernmodul
     public void sendSignal(Context context) {
         RequestQueue queue = Volley.newRequestQueue(context);
         System.out.println(Configuration.host + "update/" + this.color);
